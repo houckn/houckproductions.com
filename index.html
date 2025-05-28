@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Houck Productions</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: black;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: 2px solid white;
+      color: white;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .buttons a:hover {
+      background: white;
+      color: black;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to HouckProductions.com</h1>
-  <p>This page is currently under construction...</p>
-  <p>Stay tuned!</p>
+  <div class="hero">
+    <!-- You can replace the src with your own hosted MP4 -->
+    <video autoplay muted loop>
+      <source src="assets/demo-reel.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h1>Houck Productions</h1>
+      <div class="buttons">
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Houck Productions. All rights reserved.
+  </footer>
 </body>
 </html>
